@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* header section */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+/* navbar */
+.brand{
+    font-size: 45px;
+    font-weight: bold;
+}
+.nav-div2 a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.nav-div2{
+    display: flex;
+    gap: 30px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+/* brand msg section */
+.brand-msg{
+    width: 862px;
+    margin: 0 auto;
+    text-align: center
+}
+.brand-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: #131313;
+}
+.brand-des{
+    font-size: 16px;
+    color: #727272;
+}
+.primary-btn{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(255, 144, 14, 1);
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+}
+/* banner */
+.banner{
+    margin-top: 50px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+/* main section */
+
+
+/* team section */
+
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+  
+}
+
+.quick{
+    font-size: 45px;
+    font-weight: 500;
+    color: #727272;
+}
+.features{
+    font-size: 45px;
+    font-weight: bold;
+    color: #FF900E;
+}
+.team-features{
+    width: 537px;
+}
+.team-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 85px;
+}
+/* box-features */
+
+.box-features{
+    border-left: 5px solid #FF900E;
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 21px;
+
+}
+.box-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.box{
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px 42px ;
+}
+
+.sticker{
+    background-color: #FF900E;
+    color: white;
+    text-align: center;
+    padding: 40px;
+   width: 342px;
+   position: relative;
+   bottom: 100px;
+   right: 50px;
+}
+.sticker-title{
+    font-size: 65px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.sticker-des{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 0 auto;
+}
+.box-div1{
+    width: 586px;
+}
+.box-div2{
+   padding-top: 120px;
+    
+}
+.box-img{
+    width: 708px;
+    height: 982px;
+}
+
+
+
+
+
+/* responsive for mobile devices */
+
+@media screen and (max-width:576px) {
+    .navbar, .nav-div2, .team-container, .box-container{
+        flex-direction: column;
+    }
+    .brand-msg, .banner-img, .box-div1 {
+        width: calc(100% - 100px);
+    }
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+     .team-features{
+        width: 100%;
+     }
+     .box-img{
+        width: calc(100% - 20px);
+        height: 100%;
+        margin: 0 auto;
+     }
+     .sticker{
+        position: relative;
+        top: -100px;
+        right: -10px;
+     }
+}
